@@ -13,9 +13,12 @@ class MyStackTest {
 
         // when
         stack.push("first string");
+        stack.push("second string");
+        stack.push("third string");
+
 
         // then
-        assertThat(stack.peek()).isEqualToIgnoringCase("first string");
+        assertThat(stack.peek()).isEqualToIgnoringCase("third string");
     }
 
     @Test
@@ -37,9 +40,11 @@ class MyStackTest {
 
         // when
         stack.push("first string");
+        stack.push("second string");
+        stack.push("third string");
 
         // then
-        assertThat(stack.pop()).isEqualToIgnoringCase("first string");
+        assertThat(stack.pop()).isEqualToIgnoringCase("third string");
     }
 
     @Test
