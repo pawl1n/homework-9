@@ -119,7 +119,7 @@ class MyStackTest {
     }
 
     @Test
-    void shouldBeFull() {
+    void shouldNotBeFull() {
         // given
         MyStack<String> stack = new MyStack<>();
 
@@ -131,7 +131,7 @@ class MyStackTest {
     }
 
     @Test
-    void testToString() {
+    void shouldBeFull() {
         // given
         MyStack<String> stack = new MyStack<>();
 
